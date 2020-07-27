@@ -32,9 +32,18 @@ configure(subprojects.filter { it.name != "detekt-bom" }) {
     }
 
     // bundle detekt's version for all jars to use it at runtime
+    val manifestVersionKey = "DetektVersion"
     tasks.withType<Jar>().configureEach {
         manifest {
-            attributes(mapOf("DetektVersion" to Versions.DETEKT))
+            attributes(mapOf(manifestVersionKey to Versions.DETEKT))
+        }
+    }
+
+    normalization {
+        runtimeClasspath {
+            metaInf {
+                ignoreAttribute(manifestVersionKey)
+            }
         }
     }
 
