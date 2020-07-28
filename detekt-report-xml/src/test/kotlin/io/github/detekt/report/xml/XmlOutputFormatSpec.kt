@@ -4,25 +4,51 @@ package io.github.detekt.report.xml
 
 import io.gitlab.arturbosch.detekt.api.CodeSmell
 import io.gitlab.arturbosch.detekt.api.Debt
+import io.gitlab.arturbosch.detekt.api.Detektion
 import io.gitlab.arturbosch.detekt.api.Entity
+import io.gitlab.arturbosch.detekt.api.Finding
 import io.gitlab.arturbosch.detekt.api.Issue
 import io.gitlab.arturbosch.detekt.api.Location
+import io.gitlab.arturbosch.detekt.api.Notification
+import io.gitlab.arturbosch.detekt.api.ProjectMetric
 import io.gitlab.arturbosch.detekt.api.Severity
 import io.gitlab.arturbosch.detekt.api.SourceLocation
 import io.gitlab.arturbosch.detekt.api.TextLocation
-import io.gitlab.arturbosch.detekt.test.TestDetektion
 import org.assertj.core.api.Assertions.assertThat
+import org.jetbrains.kotlin.com.intellij.openapi.util.Key
+import org.jetbrains.kotlin.com.intellij.util.keyFMap.KeyFMap
 import org.spekframework.spek2.Spek
 import org.spekframework.spek2.style.specification.describe
+
+open class TestDetektion(vararg findings: Finding) : Detektion {
+
+    override val metrics: Collection<ProjectMetric> = listOf()
+    override val findings: Map<String, List<Finding>> = findings.groupBy { it.id }
+    override val notifications: List<Notification> = listOf()
+    private var userData = KeyFMap.EMPTY_MAP
+
+    override fun <V> getData(key: Key<V>): V? = userData.get(key)
+
+    override fun <V> addData(key: Key<V>, value: V) {
+        userData = userData.plus(key, value)
+    }
+
+    fun <V> removeData(key: Key<V>) {
+        userData = userData.minus(key)
+    }
+
+    override fun add(notification: Notification) = throw UnsupportedOperationException("not implemented")
+    override fun add(projectMetric: ProjectMetric) = throw UnsupportedOperationException("not implemented")
+}
 
 class XmlOutputFormatSpec : Spek({
 
     val entity1 = Entity("Sample1", "com.sample.Sample1", "",
-            Location(SourceLocation(11, 1), TextLocation(0, 10),
-                    "abcd", "src/main/com/sample/Sample1.kt"))
+        Location(SourceLocation(11, 1), TextLocation(0, 10),
+            "abcd", "src/main/com/sample/Sample1.kt"))
     val entity2 = Entity("Sample2", "com.sample.Sample2", "",
-            Location(SourceLocation(22, 2), TextLocation(0, 20),
-                    "efgh", "src/main/com/sample/Sample2.kt"))
+        Location(SourceLocation(22, 2), TextLocation(0, 20),
+            "efgh", "src/main/com/sample/Sample2.kt"))
 
     val outputFormat = XmlOutputReport()
 

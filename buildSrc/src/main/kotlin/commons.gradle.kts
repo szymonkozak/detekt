@@ -42,6 +42,8 @@ configure(subprojects.filter { it.name != "detekt-bom" }) {
 
     tasks.withType<Test>().configureEach {
         useJUnitPlatform()
+        include("**/*Spec.class")
+//        setTestNameIncludePatterns(listOf("**/*Spec.kt"))
         systemProperty("SPEK_TIMEOUT", 0) // disable test timeout
         val compileSnippetText: Boolean = if (project.hasProperty("compile-test-snippets")) {
             (project.property("compile-test-snippets") as String).toBoolean()
@@ -78,6 +80,7 @@ configure(subprojects.filter { it.name != "detekt-bom" }) {
         implementation(platform(project(":detekt-bom")))
         compileOnly(kotlin("stdlib-jdk8"))
 
+        testImplementation(kotlin("stdlib-jdk8"))
         testImplementation("org.assertj:assertj-core")
         testImplementation("org.spekframework.spek2:spek-dsl-jvm")
         testImplementation("org.reflections:reflections")
