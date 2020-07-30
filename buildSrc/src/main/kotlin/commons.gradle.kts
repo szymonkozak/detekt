@@ -40,27 +40,29 @@ configure(subprojects.filter { it.name != "detekt-bom" }) {
 
     jacoco.toolVersion = Versions.JACOCO
 
-    tasks.withType<Test>().configureEach {
-        useJUnitPlatform()
-        systemProperty("SPEK_TIMEOUT", 0) // disable test timeout
-        val compileSnippetText: Boolean = if (project.hasProperty("compile-test-snippets")) {
-            (project.property("compile-test-snippets") as String).toBoolean()
-        } else {
-            false
-        }
-        systemProperty("compile-snippet-tests", compileSnippetText)
-        testLogging {
-            // set options for log level LIFECYCLE
-            events = setOf(
-                TestLogEvent.FAILED,
-                TestLogEvent.STANDARD_ERROR,
-                TestLogEvent.STANDARD_OUT,
-                TestLogEvent.SKIPPED
-            )
-            exceptionFormat = TestExceptionFormat.FULL
-            showExceptions = true
-            showCauses = true
-            showStackTraces = true
+    if (project.name !in setOf("detekt-report-txt", "detekt-report-xml")) {
+        tasks.withType<Test>().configureEach {
+            useJUnitPlatform()
+            systemProperty("SPEK_TIMEOUT", 0) // disable test timeout
+            val compileSnippetText: Boolean = if (project.hasProperty("compile-test-snippets")) {
+                (project.property("compile-test-snippets") as String).toBoolean()
+            } else {
+                false
+            }
+            systemProperty("compile-snippet-tests", compileSnippetText)
+            testLogging {
+                // set options for log level LIFECYCLE
+                events = setOf(
+                    TestLogEvent.FAILED,
+                    TestLogEvent.STANDARD_ERROR,
+                    TestLogEvent.STANDARD_OUT,
+                    TestLogEvent.SKIPPED
+                )
+                exceptionFormat = TestExceptionFormat.FULL
+                showExceptions = true
+                showCauses = true
+                showStackTraces = true
+            }
         }
     }
 
@@ -79,12 +81,17 @@ configure(subprojects.filter { it.name != "detekt-bom" }) {
         compileOnly(kotlin("stdlib-jdk8"))
 
         testImplementation("org.assertj:assertj-core")
-        testImplementation("org.spekframework.spek2:spek-dsl-jvm")
+        if (project.name !in setOf("detekt-report-txt", "detekt-report-xml")) {
+            testImplementation("org.spekframework.spek2:spek-dsl-jvm")
+        }
+
         testImplementation("org.reflections:reflections")
         testImplementation("io.mockk:mockk")
 
         testRuntimeOnly("org.junit.platform:junit-platform-launcher")
-        testRuntimeOnly("org.spekframework.spek2:spek-runner-junit5")
+        if (project.name !in setOf("detekt-report-txt", "detekt-report-xml")) {
+            testRuntimeOnly("org.spekframework.spek2:spek-runner-junit5")
+        }
     }
 }
 
