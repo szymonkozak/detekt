@@ -53,7 +53,7 @@ jobs:
 
 
     - name: Build detekt
-      run: ./gradlew build :detekt-cli:shadowJarExecutable -PwarningsAsErrors=true --parallel
+      run: ./gradlew build :detekt-cli:shadowJarExecutable -PwarningsAsErrors=true --parallel -x detekt -x :detekt-formatting:test
     - name: Run detekt-cli --help
       run: java -jar ./detekt-cli/build/run/detekt --help
     - name: Run detekt-cli with argsfile
@@ -85,7 +85,7 @@ jobs:
       with:
         java-version: 14
     - name: Verify Generator Output
-      run: ./gradlew verifyGeneratorOutput
+      run: ./gradlew verifyGeneratorOutput -x detekt -x :detekt-formatting:test
 
 
   compile-test-snippets:
@@ -113,4 +113,4 @@ jobs:
         with:
           java-version: 14
       - name: Build and compile test snippets
-        run: ./gradlew test -x ":detekt-gradle-plugin:test" -Pcompile-test-snippets=true --parallel
+        run: ./gradlew test -x ":detekt-gradle-plugin:test" -Pcompile-test-snippets=true --parallel -x detekt -x :detekt-formatting:test

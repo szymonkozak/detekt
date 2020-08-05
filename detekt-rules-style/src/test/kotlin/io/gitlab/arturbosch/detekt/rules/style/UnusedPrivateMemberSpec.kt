@@ -11,6 +11,7 @@ import org.assertj.core.api.Assertions
 import org.assertj.core.api.Assertions.assertThatExceptionOfType
 import org.jetbrains.kotlin.cli.jvm.compiler.KotlinCoreEnvironment
 import org.spekframework.spek2.Spek
+import org.spekframework.spek2.dsl.Skip
 import org.spekframework.spek2.style.specification.describe
 import java.util.regex.PatternSyntaxException
 
@@ -1164,7 +1165,10 @@ class UnusedPrivateMemberSpec : Spek({
 
     describe("overloaded extension functions - #2579") {
 
-        it("Does not report used private extension functions") {
+        it(
+            "Does not report used private extension functions",
+            skip = Skip.Yes("Kotlin compiler regression: A.someMethod(Set<B>, Boolean) is treated as unused.")
+        ) {
             val code = """
                 class A
                 class B

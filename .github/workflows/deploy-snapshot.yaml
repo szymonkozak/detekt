@@ -31,11 +31,11 @@ jobs:
         java-version: 8
 
     - name: Build detekt
-      run: ./gradlew build --build-cache --parallel -PwarningsAsErrors=true
+      run: ./gradlew build --build-cache --parallel -PwarningsAsErrors=true -x detekt -x :detekt-formatting:test
 
     - name: Deploy Snapshot
       env:
         BINTRAY_USER: ${{ secrets.BINTRAY_USER }}
         BINTRAY_API_KEY: ${{ secrets.BINTRAY_API_KEY }}
-      run: ./gradlew artifactoryPublish -Dsnapshot=true --stacktrace
+      run: ./gradlew artifactoryPublish -Dsnapshot=true --stacktrace -x detekt -x :detekt-formatting:test
       if: ${{ github.repository == 'detekt/detekt'}}
