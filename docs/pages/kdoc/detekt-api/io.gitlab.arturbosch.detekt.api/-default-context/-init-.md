@@ -1,12 +1,14 @@
 ---
-title: DefaultContext.<init> - detekt-api
+title: <init> -
 ---
+//[detekt-api](../../index.md)/[io.gitlab.arturbosch.detekt.api](../index.md)/[DefaultContext](index.md)/[<init>](-init-.md)
 
-[detekt-api](../../index.html) / [io.gitlab.arturbosch.detekt.api](../index.html) / [DefaultContext](index.html) / [&lt;init&gt;](./-init-.html)
 
-# &lt;init&gt;
 
-`DefaultContext()`
+# <init>  
+[jvm]  
+Content  
+fun [<init>](-init-.md)()  
 
-Default [Context](../-context/index.html) implementation.
+
 

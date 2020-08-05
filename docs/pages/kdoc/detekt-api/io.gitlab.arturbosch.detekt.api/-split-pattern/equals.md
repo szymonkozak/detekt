@@ -1,13 +1,18 @@
 ---
-title: SplitPattern.equals - detekt-api
+title: equals -
 ---
+//[detekt-api](../../index.md)/[io.gitlab.arturbosch.detekt.api](../index.md)/[SplitPattern](index.md)/[equals](equals.md)
 
-[detekt-api](../../index.html) / [io.gitlab.arturbosch.detekt.api](../index.html) / [SplitPattern](index.html) / [equals](./equals.html)
 
-# equals
 
-`fun ~~equals~~(value: `[`String`](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`?): `[`Boolean`](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)
-**Deprecated:** The name 'equals' should only be used when matching the 'equals contract'.
+# equals  
+[jvm]  
+Brief description  
+Is there any element which matches given [value]()?  
+  
+  
+Content  
+~~fun~~ [~~equals~~](equals.md)~~(~~~~value~~~~:~~ [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?~~)~~~~:~~ [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)  
 
-Is there any element which matches given [value](equals.html#io.gitlab.arturbosch.detekt.api.SplitPattern$equals(kotlin.String)/value)?
+
 

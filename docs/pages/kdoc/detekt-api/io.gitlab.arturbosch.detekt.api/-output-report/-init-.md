@@ -1,13 +1,14 @@
 ---
-title: OutputReport.<init> - detekt-api
+title: <init> -
 ---
+//[detekt-api](../../index.md)/[io.gitlab.arturbosch.detekt.api](../index.md)/[OutputReport](index.md)/[<init>](-init-.md)
 
-[detekt-api](../../index.html) / [io.gitlab.arturbosch.detekt.api](../index.html) / [OutputReport](index.html) / [&lt;init&gt;](./-init-.html)
 
-# &lt;init&gt;
 
-`OutputReport()`
+# <init>  
+[jvm]  
+Content  
+fun [<init>](-init-.md)()  
 
-Translates detekt's result container - [Detektion](../-detektion/index.html) - into an output report
-which is written inside a file.
+
 

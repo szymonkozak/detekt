@@ -1,9 +1,14 @@
 ---
-title: FailFastConfig.<init> - detekt-api
+title: <init> -
 ---
+//[detekt-api](../../index.md)/[io.gitlab.arturbosch.detekt.api.internal](../index.md)/[FailFastConfig](index.md)/[<init>](-init-.md)
 
-[detekt-api](../../index.html) / [io.gitlab.arturbosch.detekt.api.internal](../index.html) / [FailFastConfig](index.html) / [&lt;init&gt;](./-init-.html)
 
-# &lt;init&gt;
 
-`FailFastConfig(originalConfig: `[`Config`](../../io.gitlab.arturbosch.detekt.api/-config/index.html)`, defaultConfig: `[`Config`](../../io.gitlab.arturbosch.detekt.api/-config/index.html)`)`
+# <init>  
+[jvm]  
+Content  
+fun [<init>](-init-.md)(originalConfig: [Config](../../io.gitlab.arturbosch.detekt.api/-config/index.md), defaultConfig: [Config](../../io.gitlab.arturbosch.detekt.api/-config/index.md))  
+
+
+

@@ -1,9 +1,14 @@
 ---
-title: CommaSeparatedPattern.<init> - detekt-api
+title: <init> -
 ---
+//[detekt-api](../../index.md)/[io.gitlab.arturbosch.detekt.api.internal](../index.md)/[CommaSeparatedPattern](index.md)/[<init>](-init-.md)
 
-[detekt-api](../../index.html) / [io.gitlab.arturbosch.detekt.api.internal](../index.html) / [CommaSeparatedPattern](index.html) / [&lt;init&gt;](./-init-.html)
 
-# &lt;init&gt;
 
-`CommaSeparatedPattern(text: `[`String`](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`, delimiters: `[`String`](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)` = ",")`
+# <init>  
+[jvm]  
+Content  
+fun [<init>](-init-.md)(text: [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html), delimiters: [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html))  
+
+
+

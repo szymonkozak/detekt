@@ -1,12 +1,14 @@
 ---
-title: BaseConfig.<init> - detekt-api
+title: <init> -
 ---
+//[detekt-api](../../index.md)/[io.gitlab.arturbosch.detekt.api.internal](../index.md)/[BaseConfig](index.md)/[<init>](-init-.md)
 
-[detekt-api](../../index.html) / [io.gitlab.arturbosch.detekt.api.internal](../index.html) / [BaseConfig](index.html) / [&lt;init&gt;](./-init-.html)
 
-# &lt;init&gt;
 
-`BaseConfig()`
+# <init>  
+[jvm]  
+Content  
+fun [<init>](-init-.md)()  
 
-Convenient base configuration which parses/casts the configuration value based on the type of the default value.
+
 

@@ -1,12 +1,14 @@
 ---
-title: CompilerResources.<init> - detekt-api
+title: <init> -
 ---
+//[detekt-api](../../index.md)/[io.gitlab.arturbosch.detekt.api.internal](../index.md)/[CompilerResources](index.md)/[<init>](-init-.md)
 
-[detekt-api](../../index.html) / [io.gitlab.arturbosch.detekt.api.internal](../index.html) / [CompilerResources](index.html) / [&lt;init&gt;](./-init-.html)
 
-# &lt;init&gt;
 
-`CompilerResources(languageVersionSettings: LanguageVersionSettings, dataFlowValueFactory: DataFlowValueFactory)`
+# <init>  
+[jvm]  
+Content  
+fun [<init>](-init-.md)(languageVersionSettings: [LanguageVersionSettings](), dataFlowValueFactory: [DataFlowValueFactory]())  
 
-Provides compiler resources.
+
 

@@ -1,9 +1,14 @@
 ---
-title: DisabledAutoCorrectConfig.<init> - detekt-api
+title: <init> -
 ---
+//[detekt-api](../../index.md)/[io.gitlab.arturbosch.detekt.api.internal](../index.md)/[DisabledAutoCorrectConfig](index.md)/[<init>](-init-.md)
 
-[detekt-api](../../index.html) / [io.gitlab.arturbosch.detekt.api.internal](../index.html) / [DisabledAutoCorrectConfig](index.html) / [&lt;init&gt;](./-init-.html)
 
-# &lt;init&gt;
 
-`DisabledAutoCorrectConfig(wrapped: `[`Config`](../../io.gitlab.arturbosch.detekt.api/-config/index.html)`)`
+# <init>  
+[jvm]  
+Content  
+fun [<init>](-init-.md)(wrapped: [Config](../../io.gitlab.arturbosch.detekt.api/-config/index.md))  
+
+
+

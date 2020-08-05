@@ -1,12 +1,14 @@
 ---
-title: CompositeConfig.<init> - detekt-api
+title: <init> -
 ---
+//[detekt-api](../../index.md)/[io.gitlab.arturbosch.detekt.api.internal](../index.md)/[CompositeConfig](index.md)/[<init>](-init-.md)
 
-[detekt-api](../../index.html) / [io.gitlab.arturbosch.detekt.api.internal](../index.html) / [CompositeConfig](index.html) / [&lt;init&gt;](./-init-.html)
 
-# &lt;init&gt;
 
-`CompositeConfig(lookFirst: `[`Config`](../../io.gitlab.arturbosch.detekt.api/-config/index.html)`, lookSecond: `[`Config`](../../io.gitlab.arturbosch.detekt.api/-config/index.html)`)`
+# <init>  
+[jvm]  
+Content  
+fun [<init>](-init-.md)(lookFirst: [Config](../../io.gitlab.arturbosch.detekt.api/-config/index.md), lookSecond: [Config](../../io.gitlab.arturbosch.detekt.api/-config/index.md))  
 
-Wraps two different configuration which should be considered when retrieving properties.
+
 

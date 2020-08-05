@@ -1,28 +1,43 @@
 ---
-title: HasEntity - detekt-api
+title: HasEntity -
 ---
+//[detekt-api](../../index.md)/[io.gitlab.arturbosch.detekt.api](../index.md)/[HasEntity](index.md)
 
-[detekt-api](../../index.html) / [io.gitlab.arturbosch.detekt.api](../index.html) / [HasEntity](./index.html)
 
-# HasEntity
 
-`interface HasEntity`
+# HasEntity  
+ [jvm] Describes a source code position.  
+  
+interface [HasEntity](index.md)   
 
-Describes a source code position.
 
-### Properties
+## Functions  
+  
+|  Name|  Summary| 
+|---|---|
+| [equals](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/equals.html)| [jvm]  <br>Content  <br>open operator override fun [equals](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/equals.html)(other: [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?): [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)  <br><br><br>
+| [hashCode](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/hash-code.html)| [jvm]  <br>Content  <br>open override fun [hashCode](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/hash-code.html)(): [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)  <br><br><br>
+| [toString](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/to-string.html)| [jvm]  <br>Content  <br>open override fun [toString](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/to-string.html)(): [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)  <br><br><br>
 
-| [charPosition](char-position.html) | `open val charPosition: `[`TextLocation`](../-text-location/index.html) |
-| [entity](entity.html) | `abstract val entity: `[`Entity`](../-entity/index.html) |
-| [file](file.html) | `open val file: `[`String`](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) |
-| [inClass](in-class.html) | `open val ~~inClass~~: `[`String`](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) |
-| [location](location.html) | `open val location: `[`Location`](../-location/index.html) |
-| [locationAsString](location-as-string.html) | `open val ~~locationAsString~~: `[`String`](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) |
-| [name](name.html) | `open val ~~name~~: `[`String`](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) |
-| [signature](signature.html) | `open val signature: `[`String`](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) |
-| [startPosition](start-position.html) | `open val startPosition: `[`SourceLocation`](../-source-location/index.html) |
 
-### Inheritors
+## Properties  
+  
+|  Name|  Summary| 
+|---|---|
+| [charPosition](index.md#io.gitlab.arturbosch.detekt.api/HasEntity/charPosition/#/PointingToDeclaration/)|  [jvm] open val [charPosition](index.md#io.gitlab.arturbosch.detekt.api/HasEntity/charPosition/#/PointingToDeclaration/): [TextLocation](../-text-location/index.md)   <br>
+| [entity](index.md#io.gitlab.arturbosch.detekt.api/HasEntity/entity/#/PointingToDeclaration/)|  [jvm] abstract val [entity](index.md#io.gitlab.arturbosch.detekt.api/HasEntity/entity/#/PointingToDeclaration/): [Entity](../-entity/index.md)   <br>
+| [file](index.md#io.gitlab.arturbosch.detekt.api/HasEntity/file/#/PointingToDeclaration/)|  [jvm] open val [file](index.md#io.gitlab.arturbosch.detekt.api/HasEntity/file/#/PointingToDeclaration/): [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)   <br>
+| [inClass](index.md#io.gitlab.arturbosch.detekt.api/HasEntity/inClass/#/PointingToDeclaration/)|  [jvm] ~~open~~ ~~val~~ [~~inClass~~](index.md#io.gitlab.arturbosch.detekt.api/HasEntity/inClass/#/PointingToDeclaration/)~~:~~ [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)   <br>
+| [location](index.md#io.gitlab.arturbosch.detekt.api/HasEntity/location/#/PointingToDeclaration/)|  [jvm] open val [location](index.md#io.gitlab.arturbosch.detekt.api/HasEntity/location/#/PointingToDeclaration/): [Location](../-location/index.md)   <br>
+| [locationAsString](index.md#io.gitlab.arturbosch.detekt.api/HasEntity/locationAsString/#/PointingToDeclaration/)|  [jvm] ~~open~~ ~~val~~ [~~locationAsString~~](index.md#io.gitlab.arturbosch.detekt.api/HasEntity/locationAsString/#/PointingToDeclaration/)~~:~~ [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)   <br>
+| [name](index.md#io.gitlab.arturbosch.detekt.api/HasEntity/name/#/PointingToDeclaration/)|  [jvm] ~~open~~ ~~val~~ [~~name~~](index.md#io.gitlab.arturbosch.detekt.api/HasEntity/name/#/PointingToDeclaration/)~~:~~ [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)   <br>
+| [signature](index.md#io.gitlab.arturbosch.detekt.api/HasEntity/signature/#/PointingToDeclaration/)|  [jvm] open val [signature](index.md#io.gitlab.arturbosch.detekt.api/HasEntity/signature/#/PointingToDeclaration/): [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)   <br>
+| [startPosition](index.md#io.gitlab.arturbosch.detekt.api/HasEntity/startPosition/#/PointingToDeclaration/)|  [jvm] open val [startPosition](index.md#io.gitlab.arturbosch.detekt.api/HasEntity/startPosition/#/PointingToDeclaration/): [SourceLocation](../-source-location/index.md)   <br>
 
-| [Finding](../-finding/index.html) | Base interface of detection findings. Inherits a bunch of useful behaviour from sub interfaces.`interface Finding : `[`Compactable`](../-compactable/index.html)`, `[`HasEntity`](./index.html)`, `[`HasMetrics`](../-has-metrics/index.html) |
+
+## Inheritors  
+  
+|  Name| 
+|---|
+| [Finding](../-finding/index.md)
 

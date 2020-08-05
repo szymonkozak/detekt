@@ -1,13 +1,14 @@
 ---
-title: SingleAssign.<init> - detekt-api
+title: <init> -
 ---
+//[detekt-api](../../index.md)/[io.gitlab.arturbosch.detekt.api](../index.md)/[SingleAssign](index.md)/[<init>](-init-.md)
 
-[detekt-api](../../index.html) / [io.gitlab.arturbosch.detekt.api](../index.html) / [SingleAssign](index.html) / [&lt;init&gt;](./-init-.html)
 
-# &lt;init&gt;
 
-`SingleAssign()`
+# <init>  
+[jvm]  
+Content  
+fun <[T](index.md) : [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)> [<init>](-init-.md)()  
 
-Allows to assign a property just once.
-Further assignments result in [IllegalStateException](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-illegal-state-exception/index.html)'s.
+
 

@@ -1,12 +1,14 @@
 ---
-title: TextLocation.<init> - detekt-api
+title: <init> -
 ---
+//[detekt-api](../../index.md)/[io.gitlab.arturbosch.detekt.api](../index.md)/[TextLocation](index.md)/[<init>](-init-.md)
 
-[detekt-api](../../index.html) / [io.gitlab.arturbosch.detekt.api](../index.html) / [TextLocation](index.html) / [&lt;init&gt;](./-init-.html)
 
-# &lt;init&gt;
 
-`TextLocation(start: `[`Int`](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, end: `[`Int`](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)`
+# <init>  
+[jvm]  
+Content  
+fun [<init>](-init-.md)(start: [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html), end: [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html))  
 
-Stores character start and end positions of an text file.
+
 

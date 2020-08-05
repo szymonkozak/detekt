@@ -1,12 +1,14 @@
 ---
-title: Issue.<init> - detekt-api
+title: <init> -
 ---
+//[detekt-api](../../index.md)/[io.gitlab.arturbosch.detekt.api](../index.md)/[Issue](index.md)/[<init>](-init-.md)
 
-[detekt-api](../../index.html) / [io.gitlab.arturbosch.detekt.api](../index.html) / [Issue](index.html) / [&lt;init&gt;](./-init-.html)
 
-# &lt;init&gt;
 
-`Issue(id: `[`String`](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`, severity: `[`Severity`](../-severity/index.html)`, description: `[`String`](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`, debt: `[`Debt`](../-debt/index.html)`)`
+# <init>  
+[jvm]  
+Content  
+fun [<init>](-init-.md)(id: [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html), severity: [Severity](../-severity/index.md), description: [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html), debt: [Debt](../-debt/index.md))  
 
-An issue represents a problem in the codebase.
+
 

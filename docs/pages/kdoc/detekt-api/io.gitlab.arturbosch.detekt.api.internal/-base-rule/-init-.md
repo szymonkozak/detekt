@@ -1,9 +1,14 @@
 ---
-title: BaseRule.<init> - detekt-api
+title: <init> -
 ---
+//[detekt-api](../../index.md)/[io.gitlab.arturbosch.detekt.api.internal](../index.md)/[BaseRule](index.md)/[<init>](-init-.md)
 
-[detekt-api](../../index.html) / [io.gitlab.arturbosch.detekt.api.internal](../index.html) / [BaseRule](index.html) / [&lt;init&gt;](./-init-.html)
 
-# &lt;init&gt;
 
-`BaseRule(context: `[`Context`](../../io.gitlab.arturbosch.detekt.api/-context/index.html)` = DefaultContext())`
+# <init>  
+[jvm]  
+Content  
+fun [<init>](-init-.md)(context: [Context](../../io.gitlab.arturbosch.detekt.api/-context/index.md))  
+
+
+

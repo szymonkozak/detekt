@@ -1,12 +1,14 @@
 ---
-title: Location.<init> - detekt-api
+title: <init> -
 ---
+//[detekt-api](../../index.md)/[io.gitlab.arturbosch.detekt.api](../index.md)/[Location](index.md)/[<init>](-init-.md)
 
-[detekt-api](../../index.html) / [io.gitlab.arturbosch.detekt.api](../index.html) / [Location](index.html) / [&lt;init&gt;](./-init-.html)
 
-# &lt;init&gt;
 
-`Location(source: `[`SourceLocation`](../-source-location/index.html)`, text: `[`TextLocation`](../-text-location/index.html)`, locationString: `[`String`](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`, file: `[`String`](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`)`
+# <init>  
+[jvm]  
+Content  
+fun [<init>](-init-.md)(source: [SourceLocation](../-source-location/index.md), text: [TextLocation](../-text-location/index.md), locationString: [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html), file: [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html))  
 
-Specifies a position within a source code fragment.
+
 

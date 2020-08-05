@@ -1,12 +1,14 @@
 ---
-title: Config.InvalidConfigurationError.<init> - detekt-api
+title: <init> -
 ---
+//[detekt-api](../../../index.md)/[io.gitlab.arturbosch.detekt.api](../../index.md)/[Config](../index.md)/[InvalidConfigurationError](index.md)/[<init>](-init-.md)
 
-[detekt-api](../../../index.html) / [io.gitlab.arturbosch.detekt.api](../../index.html) / [Config](../index.html) / [InvalidConfigurationError](index.html) / [&lt;init&gt;](./-init-.html)
 
-# &lt;init&gt;
 
-`InvalidConfigurationError(throwable: `[`Throwable`](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html)`? = null)`
+# <init>  
+[jvm]  
+Content  
+fun [<init>](-init-.md)(throwable: [Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html)?)  
 
-Is thrown when loading a configuration results in errors.
+
 
