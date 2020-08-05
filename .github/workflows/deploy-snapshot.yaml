@@ -31,7 +31,7 @@ jobs:
         java-version: 8
 
     - name: Build detekt
-      run: ./gradlew build --build-cache --parallel -PwarningsAsErrors=true -x detekt -x :detekt-formatting:test
+      run: ./gradlew build --build-cache --parallel -PwarningsAsErrors=false -x detekt -x :detekt-formatting:test
 
     - name: Deploy Snapshot
       env:
